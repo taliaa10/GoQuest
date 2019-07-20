@@ -1,3 +1,3 @@
-# Natours
+# GoQuest
 
 ![](natours-fullsite.png)

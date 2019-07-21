@@ -1,3 +1,3 @@
 # GoQuest
 
-![](natours-fullsite.png)
+![](goquest-fullsite.png)

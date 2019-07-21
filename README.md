@@ -1,3 +1,3 @@
 # GoQuest
 
-<a href="goquest.surge.sh">![](goquest-fullsite.png)</a>
+<a href="http://goquest.surge.sh">![](goquest-fullsite.png)</a>

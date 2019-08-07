@@ -21,11 +21,19 @@
         opacity: 0;
         transform: translate(-50%, -50%) scale(.25);
         transition: all .6s .4s;
+
+        @include respond(phone) {
+            display: block;
+        }
     }
 
     &__left {
         width: 33.3333333%;
         display: table-cell;
+
+        @include respond(phone) {
+            display: block;
+        }
     }
 
     &__right {
@@ -33,11 +41,20 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+    
+        @include respond(phone) {
+            // display: block;
+        }
     }
 
     &__img {
         display: block;
         width: 100%;
+
+        @include respond(phone) {
+            display: inline-block;
+            float: left;
+        }
     }
 
     &__text {
@@ -49,6 +66,12 @@
         column-rule: 1px solid $color-grey-light-2;
 
         hyphens: auto;
+
+        @include respond(phone) {
+            column-count: 1;
+            column-gap: 0;
+
+        }
     }
 
     // Open States

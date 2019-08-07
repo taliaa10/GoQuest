@@ -970,9 +970,21 @@ body {
   transition: all .6s .4s;
 }
 
+@media (max-width: 37.5em) {
+  .popup__content {
+    display: block;
+  }
+}
+
 .popup__left {
   width: 33.3333333%;
   display: table-cell;
+}
+
+@media (max-width: 37.5em) {
+  .popup__left {
+    display: block;
+  }
 }
 
 .popup__right {
@@ -987,6 +999,13 @@ body {
   width: 100%;
 }
 
+@media (max-width: 37.5em) {
+  .popup__img {
+    display: inline-block;
+    float: left;
+  }
+}
+
 .popup__text {
   font-size: 1.4rem;
   margin-bottom: 4rem;
@@ -999,6 +1018,15 @@ body {
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
+}
+
+@media (max-width: 37.5em) {
+  .popup__text {
+    -webkit-column-count: 1;
+            column-count: 1;
+    -webkit-column-gap: 0;
+            column-gap: 0;
+  }
 }
 
 .popup:target {
@@ -1289,13 +1317,27 @@ body {
 
 .header {
   height: 95vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(85, 197, 122, 0.8)), to(rgba(40, 180, 133, 0.8))), url(../img/hero.jpg);
-  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(85, 197, 122, 0.8)), to(rgba(40, 180, 133, 0.8))), url(../img/hero-small.jpg);
+  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero-small.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 600px), (min-resolution: 192dpi) and (min-width: 600px) {
+  .header {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 185, 0, 0.8)), to(rgba(40, 180, 133, 0.8))), url(../img/hero.jpg);
+    background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  }
+}
+
+@media (min-width: 2000px) {
+  .header {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 185, 0, 0.8)), to(rgba(40, 180, 133, 0.8))), url(../img/hero.jpg);
+    background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  }
 }
 
 @media (max-width: 37.5em) {
